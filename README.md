@@ -2,12 +2,6 @@
 
 [Nuxt](https://nuxt.com) + [Supabase](https://supabase.com) + [Tailwind](https://tailwindcss.com) starter template.
 
-<br>
-<br>
-<br>
-<br>
-<br>
-
 ## Setup
 
 Install all required packages:
@@ -16,7 +10,6 @@ Install all required packages:
 yarn install
 ```
 
-<br>
 
 ## Local Development
 
@@ -42,7 +35,6 @@ SUPABASE_KEY={SUPABASE_KEY}
 SUPABASE_SERVICE_KEY={SUPABASE_SERVICE_KEY}
 ```
 
-<br>
 
 ## Usage
 
@@ -52,7 +44,6 @@ We include a `useError` composable that serves as a temporary list of error mess
 
 An error can be added from any component using the `addError` function within the `useError` composable.
 
-<br>
 
 ### User Authentication and Authorization
 
@@ -76,4 +67,3 @@ password: test1234
 
 You will see that, once logged in, the admin user can access the `admin/users` route, whereas the standard user cannot.
 
-<br>
