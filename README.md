@@ -10,19 +10,18 @@ Install all required packages:
 yarn install
 ```
 
-
 ## Local Development
 
-Start the local Supabase project (make sure that the [Supabase CLI](https://supabase.com/docs/guides/cli) is installed (and updated!). Make sure [Docker](https://www.docker.com/products/docker-desktop/) is running.
+Start the local Supabase project. Make sure [Docker](https://www.docker.com/products/docker-desktop/) is running.
 
 ```bash
-supabase start
+yarn supabase start
 ```
 
 Start the development server on http://localhost:3000
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 ## Production Development
@@ -35,7 +34,6 @@ SUPABASE_KEY={SUPABASE_KEY}
 SUPABASE_SERVICE_KEY={SUPABASE_SERVICE_KEY}
 ```
 
-
 ## Usage
 
 ### Errors
@@ -43,7 +41,6 @@ SUPABASE_SERVICE_KEY={SUPABASE_SERVICE_KEY}
 We include a `useError` composable that serves as a temporary list of error messages that can be displayed to the client. Each error has a message, type and timeout after which it will be removed from the list. We also give a simple panel to display these errors in order (`components/errors/Errors.vue`).
 
 An error can be added from any component using the `addError` function within the `useError` composable.
-
 
 ### User Authentication and Authorization
 
@@ -66,4 +63,3 @@ password: test1234
 ```
 
 You will see that, once logged in, the admin user can access the `admin/users` route, whereas the standard user cannot.
-
